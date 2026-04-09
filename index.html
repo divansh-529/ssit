@@ -12,11 +12,31 @@
 </head>
 <body>
 
+  <!-- ===== EVENT POPUP ===== -->
+  <div class="event-popup" id="eventPopup">
+    <div class="event-popup-overlay" id="eventPopupOverlay"></div>
+    <div class="event-popup-box">
+      <button class="popup-close" id="popupClose" aria-label="Close"><i class="fas fa-times"></i></button>
+      <img src="assets/images/unipole_inogrtation .jpeg" alt="Innogration — IEEE SSIT Inaugural Event" class="popup-img" />
+      <div class="popup-footer">
+<p>Innogration — IEEE SSIT Inaugural Event</p>
+        <a href="#events" class="btn btn-outline popup-btn" id="popupEventBtn">View Details</a>
+        <a href="https://forms.gle/qMo5WmvSpW7xtupX9" target="_blank" rel="noopener" class="btn btn-primary popup-btn">Register Now</a>
+      </div>
+    </div>
+  </div>
+
   <!-- ===== PAGE LOADER ===== -->
   <div class="page-loader" id="pageLoader">
     <div class="loader-inner">
-      <div class="loader-ring"></div>
-      <span class="loader-text">IEEE SSIT</span>
+      <div class="loader-logo-wrap">
+        <div class="loader-glow"></div>
+        <img src="assets/images/logos.png" alt="IEEE SSIT" class="loader-logo" />
+      </div>
+      <div class="loader-bar-track">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <span class="loader-sub">Chandigarh University Chapter</span>
     </div>
   </div>
 
@@ -276,7 +296,7 @@
           <h3>Ready to make an impact?</h3>
           <p>Join IEEE SSIT CU Chapter and be part of something bigger.</p>
         </div>
-        <a href="#contact" class="btn btn-primary">Join the Chapter</a>
+        <a href="https://www.ieee.org/membership/join/index.html" target="_blank" rel="noopener" class="btn btn-primary">Join the Chapter</a>
       </div>
     </div>
   </section>
@@ -430,7 +450,7 @@
       <div class="team-grid">
 
         <div class="team-card reveal">
-          <div class="team-avatar"><div class="avatar-placeholder"><i class="fas fa-user"></i></div></div>
+          <div class="team-avatar"><img src="assets/images/navneet_sehgal.jpg" alt="Navneet Sehgal" class="team-avatar-img" /></div>
           <div class="team-info">
             <h3>Navneet Sehgal</h3>
             <span class="team-role">Faculty Advisor</span>
@@ -438,14 +458,14 @@
           <div class="team-overlay">
             <p class="team-bio">Guiding the chapter with expertise in technology ethics and social responsibility.</p>
             <div class="team-socials">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/navneet-sehgal-b090389b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
               <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
         </div>
 
         <div class="team-card reveal">
-          <div class="team-avatar"><div class="avatar-placeholder"><i class="fas fa-user"></i></div></div>
+          <div class="team-avatar"><img src="assets/images/ashish.png" alt="Ashish Kumar" class="team-avatar-img" /></div>
           <div class="team-info">
             <h3>Ashish Kumar</h3>
             <span class="team-role">Chapter Chair</span>
@@ -453,14 +473,14 @@
           <div class="team-overlay">
             <p class="team-bio">Leading the chapter's vision to bridge technology and society through impactful initiatives.</p>
             <div class="team-socials">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/dear-ashish/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
               <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
         </div>
 
         <div class="team-card reveal">
-          <div class="team-avatar"><div class="avatar-placeholder"><i class="fas fa-user"></i></div></div>
+          <div class="team-avatar"><img src="assets/images/raj.png" alt="Rajkrishna" class="team-avatar-img" /></div>
           <div class="team-info">
             <h3>Rajkrishna</h3>
             <span class="team-role">Vice Chair</span>
@@ -468,7 +488,7 @@
           <div class="team-overlay">
             <p class="team-bio">Driving operations and member engagement across the IEEE SSIT CU chapter.</p>
             <div class="team-socials">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/rajkrishna-prasad-a0786430b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
               <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
@@ -483,7 +503,7 @@
           <div class="team-overlay">
             <p class="team-bio">Keeping the chapter organized and connected through seamless coordination.</p>
             <div class="team-socials">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/upkiratsingh/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
               <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
@@ -498,14 +518,14 @@
           <div class="team-overlay">
             <p class="team-bio">Crafting the digital presence of IEEE SSIT CU with design and development expertise.</p>
             <div class="team-socials">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/divansh-sachdev/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
               <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
         </div>
 
         <div class="team-card reveal">
-          <div class="team-avatar"><div class="avatar-placeholder"><i class="fas fa-user"></i></div></div>
+          <div class="team-avatar"><img src="assets/images/yash.png" alt="Yash Choubey" class="team-avatar-img" /></div>
           <div class="team-info">
             <h3>Yash Choubey</h3>
             <span class="team-role">Treasurer</span>
@@ -513,7 +533,7 @@
           <div class="team-overlay">
             <p class="team-bio">Managing the chapter's financial health to power events, initiatives, and member growth.</p>
             <div class="team-socials">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/yashchoubey09/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
               <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
           </div>

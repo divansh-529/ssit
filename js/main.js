@@ -249,10 +249,22 @@ document.addEventListener('DOMContentLoaded', () => {
    ============================================================= */
 
 // ---------- PAGE LOADER ----------
-window.addEventListener('load', () => {
+(function () {
   const loader = document.getElementById('pageLoader');
-  if (loader) setTimeout(() => loader.classList.add('hidden'), 480);
-});
+  const bar    = document.getElementById('loaderBar');
+  if (!loader) return;
+
+  // Animate bar to 100% shortly after start
+  setTimeout(() => { if (bar) bar.style.width = '100%'; }, 120);
+
+  // Hide loader after bar completes
+  window.addEventListener('load', () => {
+    setTimeout(() => loader.classList.add('hidden'), 750);
+  });
+
+  // Safety fallback — always hide after 3s even if load is slow
+  setTimeout(() => loader.classList.add('hidden'), 3000);
+})();
 
 // ---------- SCROLL PROGRESS ----------
 window.addEventListener('scroll', () => {
@@ -294,7 +306,7 @@ window.addEventListener('scroll', () => {
       if (p.y < 0 || p.y > H) p.vy *= -1;
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(0,87,184,0.5)';
+      ctx.fillStyle = 'rgba(100,185,255,0.7)';
       ctx.fill();
       for (let j = i + 1; j < pts.length; j++) {
         const q = pts[j];
@@ -303,7 +315,7 @@ window.addEventListener('scroll', () => {
         if (d < D) {
           ctx.beginPath();
           ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y);
-          ctx.strokeStyle = `rgba(0,87,184,${(1 - d / D) * 0.2})`;
+          ctx.strokeStyle = `rgba(100,185,255,${(1 - d / D) * 0.3})`;
           ctx.lineWidth = 0.8;
           ctx.stroke();
         }
@@ -345,4 +357,24 @@ window.addEventListener('scroll', () => {
     }
   }
   setTimeout(tick, 2200);
+})();
+
+// ---------- EVENT POPUP ----------
+(function () {
+  const popup   = document.getElementById('eventPopup');
+  const overlay = document.getElementById('eventPopupOverlay');
+  const closeBtn = document.getElementById('popupClose');
+  const eventBtn = document.getElementById('popupEventBtn');
+  if (!popup) return;
+
+  function show() { popup.classList.add('visible'); }
+  function hide() { popup.classList.remove('visible'); }
+
+  // Show after loader finishes (~900 ms)
+  window.addEventListener('load', () => setTimeout(show, 900));
+
+  closeBtn.addEventListener('click', hide);
+  overlay.addEventListener('click', hide);
+  if (eventBtn) eventBtn.addEventListener('click', hide);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') hide(); });
 })();
