@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IEEE SSIT — Chandigarh University Chapter</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== PAGE LOADER ===== -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">IEEE SSIT</span>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    <div class="nav-container">
+      <div class="nav-brand">
+        <img src="assets/images/logos.png" alt="IEEE SSIT Chandigarh University" class="nav-logo-img" />
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About SSIT</a></li>
+        <li><a href="#cu-branch" class="nav-link">CU Branch</a></li>
+        <li><a href="#events" class="nav-link">Events</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+      <canvas id="heroCanvas" class="hero-canvas"></canvas>
+    </div>
+    <div class="hero-content fade-in">
+      <div class="hero-badge">
+        <i class="fas fa-circle-nodes"></i> IEEE Society on Social Implications of Technology
+      </div>
+      <h1 class="hero-title">
+        Bridging <span class="highlight"><span id="typewriterText">Technology</span><span class="cursor-blink">|</span></span><br />
+        &amp; Society
+      </h1>
+      <p class="hero-subtitle">
+        Chandigarh University's IEEE SSIT Chapter — fostering innovation,<br />
+        ethics, and the human impact of technology.
+      </p>
+      <div class="hero-buttons">
+        <a href="#events" class="btn btn-primary">
+          <i class="fas fa-calendar-star"></i> Explore Events
+        </a>
+        <a href="#about" class="btn btn-outline">
+          About Us <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-num">20+</span>
+          <span class="stat-label">Members</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Events</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">2026</span>
+          <span class="stat-label">Founded</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll to explore</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT IEEE SSIT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who We Are</span>
+        <h2 class="section-title">About IEEE SSIT</h2>
+        <p class="section-desc">
+          The IEEE Society on Social Implications of Technology (SSIT) addresses the relationship between technology and society.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            IEEE SSIT is one of IEEE's technical societies dedicated to understanding and addressing the social, ethical, and policy dimensions of technology. Founded with a mission to ensure that technological progress benefits humanity, SSIT brings together engineers, scientists, policymakers, and social scientists worldwide.
+          </p>
+          <p>
+            Our chapter at Chandigarh University carries this global mission forward — organizing talks, workshops, hackathons, and policy discussions that connect students with the broader societal implications of the technologies they build.
+          </p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <i class="fas fa-shield-halved"></i>
+              <span>Ethics in Tech</span>
+            </div>
+            <div class="pillar">
+              <i class="fas fa-earth-asia"></i>
+              <span>Global Impact</span>
+            </div>
+            <div class="pillar">
+              <i class="fas fa-handshake"></i>
+              <span>Community</span>
+            </div>
+            <div class="pillar">
+              <i class="fas fa-lightbulb"></i>
+              <span>Innovation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats-panel reveal">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-calendar"></i></div>
+            <div class="stat-info">
+              <span class="stat-big">1982</span>
+              <span class="stat-text">Year Founded</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-users"></i></div>
+            <div class="stat-info">
+              <span class="stat-big">3,000+</span>
+              <span class="stat-text">Global Members</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-book-open"></i></div>
+            <div class="stat-info">
+              <span class="stat-big">40+</span>
+              <span class="stat-text">Years of Publications</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-globe"></i></div>
+            <div class="stat-info">
+              <span class="stat-big">50+</span>
+              <span class="stat-text">Countries Represented</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT SLIDER ===== -->
+  <section class="impact-slider" id="impact">
+    <div class="slider-wrapper">
+      <div class="slides-track" id="slidesTrack">
+
+        <div class="slide active">
+          <div class="slide-bg" style="background-image: url('assets/images/slide1.jpg')"></div>
+          <div class="slide-overlay">
+            <div class="slide-text-box">
+              <p>How should we control the development of technology?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-bg" style="background-image: url('assets/images/slide2.jpg')"></div>
+          <div class="slide-overlay">
+            <div class="slide-text-box">
+              <p>Technological change has intended and unintended consequences.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-bg" style="background-image: url('assets/images/slide3.jpg')"></div>
+          <div class="slide-overlay">
+            <div class="slide-text-box">
+              <p>Technology is a fundamental resource for human development.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-bg" style="background-image: url('assets/images/slide4.jpg')"></div>
+          <div class="slide-overlay">
+            <div class="slide-text-box">
+              <p>Technology must be harnessed for the good of humanity and the planet.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="slide-arrow slide-prev" id="slidePrev" aria-label="Previous slide">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="slide-arrow slide-next" id="slideNext" aria-label="Next slide">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <div class="slide-dots" id="slideDots">
+        <button class="slide-dot active" data-index="0"></button>
+        <button class="slide-dot" data-index="1"></button>
+        <button class="slide-dot" data-index="2"></button>
+        <button class="slide-dot" data-index="3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CU STUDENT BRANCH ===== -->
+  <section class="section cu-branch" id="cu-branch">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Our Home</span>
+        <h2 class="section-title">Chandigarh University Student Branch</h2>
+        <p class="section-desc">
+          One of Punjab's most active IEEE student branches, right at the heart of Chandigarh University.
+        </p>
+      </div>
+
+      <div class="cu-grid">
+        <div class="cu-card reveal">
+          <div class="cu-card-icon"><i class="fas fa-university"></i></div>
+          <h3>Student Branch</h3>
+          <p>
+            The Chandigarh University IEEE Student Branch is one of the largest and most active student branches in Region 10. It serves thousands of students across engineering, computer science, and applied sciences.
+          </p>
+        </div>
+        <div class="cu-card reveal">
+          <div class="cu-card-icon"><i class="fas fa-microchip"></i></div>
+          <h3>Technical Societies</h3>
+          <p>
+            The branch hosts multiple IEEE technical society chapters including SSIT, CS, ComSoc, and more — providing students exposure to cutting-edge technology domains and professional networking.
+          </p>
+        </div>
+        <div class="cu-card reveal">
+          <div class="cu-card-icon"><i class="fas fa-trophy"></i></div>
+          <h3>Achievements</h3>
+          <p>
+            Recognized for excellence in student activities, technical events, and community outreach. Members have gone on to lead research, startups, and policy initiatives globally.
+          </p>
+        </div>
+        <div class="cu-card reveal">
+          <div class="cu-card-icon"><i class="fas fa-user-graduate"></i></div>
+          <h3>Join Us</h3>
+          <p>
+            Becoming a member opens doors to global IEEE network, exclusive workshops, research opportunities, and a community of like-minded peers passionate about technology and society.
+          </p>
+        </div>
+      </div>
+
+      <div class="cu-join-banner reveal">
+        <div class="cu-join-text">
+          <h3>Ready to make an impact?</h3>
+          <p>Join IEEE SSIT CU Chapter and be part of something bigger.</p>
+        </div>
+        <a href="#contact" class="btn btn-primary">Join the Chapter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EVENTS ===== -->
+  <section class="section events" id="events">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What's Happening</span>
+        <h2 class="section-title">Events</h2>
+        <p class="section-desc">Workshops, seminars, hackathons, and more — all designed to connect technology with society.</p>
+      </div>
+
+      <div class="events-tabs reveal">
+        <button class="tab-btn active" data-tab="upcoming">Upcoming Events</button>
+        <button class="tab-btn" data-tab="past">Past Events</button>
+      </div>
+
+      <!-- Upcoming Events -->
+      <div class="events-grid tab-content active" id="upcoming">
+        <div class="event-card reveal">
+          <div class="event-date-badge">
+            <span class="event-day">10</span>
+            <span class="event-month">APR</span>
+          </div>
+          <div class="event-body">
+            <div class="event-tags">
+              <span class="event-tag">Event</span>
+              <span class="event-tag tag-online">Offline</span>
+            </div>
+            <h3 class="event-title">Innogration</h3>
+            <p class="event-desc">IEEE SSIT Inaugural Event — celebrating the launch of our chapter with talks, networking, and vision for the future.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 10:00 AM – 1:00 PM</span>
+              <span><i class="fas fa-location-dot"></i> B5 seminar Hall</span>
+            </div>
+            <a href="#contact" class="btn btn-sm">Register Now</a>
+          </div>
+        </div>
+<!-- 
+        <div class="event-card reveal">
+          <div class="event-date-badge">
+            <span class="event-day">02</span>
+            <span class="event-month">MAY</span>
+          </div>
+          <div class="event-body">
+            <div class="event-tags">
+              <span class="event-tag">Hackathon</span>
+            </div>
+            <h3 class="event-title">TechForGood Hackathon 2025</h3>
+            <p class="event-desc">24-hour hackathon focused on building solutions for social impact — accessibility, environment, and digital equity.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 9:00 AM (24 hrs)</span>
+              <span><i class="fas fa-location-dot"></i> CU Innovation Hub</span>
+            </div>
+            <a href="#contact" class="btn btn-sm">Register Now</a>
+          </div>
+        </div>
+
+        <div class="event-card reveal">
+          <div class="event-date-badge">
+            <span class="event-day">15</span>
+            <span class="event-month">MAY</span>
+          </div>
+          <div class="event-body">
+            <div class="event-tags">
+              <span class="event-tag">Talk</span>
+            </div>
+            <h3 class="event-title">Digital Privacy in the Age of Big Data</h3>
+            <p class="event-desc">Expert speaker session on data rights, surveillance capitalism, and what engineers can do to protect user privacy.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 3:00 PM – 5:00 PM</span>
+              <span><i class="fas fa-location-dot"></i> CU Auditorium</span>
+            </div>
+            <a href="#contact" class="btn btn-sm">Register Now</a>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- Past Events -->
+      <div class="events-grid tab-content" id="past">
+        <div class="event-card past reveal">
+          <div class="event-date-badge past-badge">
+            <span class="event-day">27-28</span>
+            <span class="event-month">March</span>
+          </div>
+          <div class="event-body">
+            <div class="event-tags">
+              <span class="event-tag">Herizon</span>
+              <span class="event-tag tag-completed">Completed</span>
+            </div>
+            <h3 class="event-title">HerIzon — Empowering Women in Tech</h3>
+            <p class="event-desc">An exclusive empowerment event celebrating women in STEM — featuring leadership talks, networking, and inspiring success stories.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-users"></i> 500+ Attendees</span>
+              <span><i class="fas fa-location-dot"></i> Chandigarh University</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="event-card past reveal">
+          <div class="event-date-badge past-badge">
+            <span class="event-day">05</span>
+            <span class="event-month">DEC</span>
+          </div>
+          <div class="event-body">
+            <div class="event-tags">
+              <span class="event-tag">Workshop</span>
+              <span class="event-tag tag-completed">Completed</span>
+            </div>
+            <h3 class="event-title">Responsible AI Development Workshop</h3>
+            <p class="event-desc">Hands-on workshop teaching best practices for building fair, transparent, and accountable AI systems.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-users"></i> 85 Attendees</span>
+              <span><i class="fas fa-location-dot"></i> CU Computer Lab 3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card past reveal">
+          <div class="event-date-badge past-badge">
+            <span class="event-day">18</span>
+            <span class="event-month">NOV</span>
+          </div>
+          <div class="event-body">
+            <div class="event-tags">
+              <span class="event-tag">Panel</span>
+              <span class="event-tag tag-completed">Completed</span>
+            </div>
+            <h3 class="event-title">Women in Technology Panel Discussion</h3>
+            <p class="event-desc">Celebrating and amplifying the voices of women in STEM — an inspiring panel of industry leaders and researchers.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-users"></i> 200+ Attendees</span>
+              <span><i class="fas fa-location-dot"></i> CU Auditorium</span>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">The People</span>
+        <h2 class="section-title">Meet Our Team</h2>
+        <p class="section-desc">The passionate student leaders driving IEEE SSIT CU Chapter forward.</p>
+      </div>
+
+      <div class="team-grid">
+
+        <div class="team-card reveal">
+          <div class="team-avatar"><div class="avatar-placeholder"><i class="fas fa-user"></i></div></div>
+          <div class="team-info">
+            <h3>Navneet Sehgal</h3>
+            <span class="team-role">Faculty Advisor</span>
+          </div>
+          <div class="team-overlay">
+            <p class="team-bio">Guiding the chapter with expertise in technology ethics and social responsibility.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-avatar"><div class="avatar-placeholder"><i class="fas fa-user"></i></div></div>
+          <div class="team-info">
+            <h3>Ashish Kumar</h3>
+            <span class="team-role">Chapter Chair</span>
+          </div>
+          <div class="team-overlay">
+            <p class="team-bio">Leading the chapter's vision to bridge technology and society through impactful initiatives.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-avatar"><div class="avatar-placeholder"><i class="fas fa-user"></i></div></div>
+          <div class="team-info">
+            <h3>Rajkrishna</h3>
+            <span class="team-role">Vice Chair</span>
+          </div>
+          <div class="team-overlay">
+            <p class="team-bio">Driving operations and member engagement across the IEEE SSIT CU chapter.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-avatar"><div class="avatar-placeholder"><i class="fas fa-user"></i></div></div>
+          <div class="team-info">
+            <h3>Upkirat Singh</h3>
+            <span class="team-role">Secretary</span>
+          </div>
+          <div class="team-overlay">
+            <p class="team-bio">Keeping the chapter organized and connected through seamless coordination.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-avatar"><div class="avatar-placeholder"><i class="fas fa-user"></i></div></div>
+          <div class="team-info">
+            <h3>Divansh</h3>
+            <span class="team-role">Web Master</span>
+          </div>
+          <div class="team-overlay">
+            <p class="team-bio">Crafting the digital presence of IEEE SSIT CU with design and development expertise.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-avatar"><div class="avatar-placeholder"><i class="fas fa-user"></i></div></div>
+          <div class="team-info">
+            <h3>Yash Choubey</h3>
+            <span class="team-role">Treasurer</span>
+          </div>
+          <div class="team-overlay">
+            <p class="team-bio">Managing the chapter's financial health to power events, initiatives, and member growth.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logos.png" alt="IEEE SSIT Chandigarh University" class="footer-logo-img" />
+          <p>IEEE SSIT — Chandigarh University Chapter.<br />Bridging Technology &amp; Society.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About SSIT</a></li>
+            <li><a href="#cu-branch">CU Branch</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> ssit.cu@cumail.in</li>
+            <li><i class="fas fa-location-dot"></i> Chandigarh University, Mohali, Punjab</li>
+            <li><i class="fas fa-globe"></i> ieee.org/ssit</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 IEEE SSIT — Chandigarh University Chapter. All rights reserved.</p>
+       
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
